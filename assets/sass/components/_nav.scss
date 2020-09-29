@@ -13,22 +13,14 @@
     &-wrap {
       text-align: center;
       text-align: right;
-      &:after {
-        content: '';
-        position: absolute;
-        height: 1px;
-        background-color: $color-border;
-        width: 100%;
-        top: 50%;
-        left: 0px;
-      }
     }
   }
 
   &__item {
     display: block;
     font-size: $font-size-small;
-    letter-spacing: double($global-letter-spacing);
+    letter-spacing: $global-letter-spacing;
+    text-transform: uppercase;
 
     &:not(:last-child) {
       @include mq($from: desktop) {
