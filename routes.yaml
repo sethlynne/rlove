@@ -7,6 +7,10 @@ collections:
   /:
     permalink: /{slug}/
     template: index
+  /blog/:
+    permalink: /{slug}/
+    template: blog
+    filter: tag:blog
 
 taxonomies:
   tag: /tag/{slug}/
