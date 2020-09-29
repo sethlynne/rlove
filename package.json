@@ -1,7 +1,7 @@
 {
   "name": "rlove",
   "description": "RLOVE Theme",
-  "demo": "https://www.rlove.com,
+  "demo": "https://www.rlove.com",
   "version": "1.0.0",
   "engines": {
     "ghost": ">=3.0.0",
