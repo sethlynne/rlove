@@ -4,11 +4,6 @@
 
 .c-social-icons {
   text-align: center;
-
-  @include mq($from: tablet) {
-    text-align: right;
-  }
-
   li {
     display: inline-block;
   }

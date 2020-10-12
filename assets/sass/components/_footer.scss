@@ -24,7 +24,23 @@
     margin-top: double($base-spacing-unit);
     padding-top: double($base-spacing-unit);
     border-top: 1px solid $color-border;
+    .col-1 {
+      text-align: center;
+      @include mq($from: tablet) {
+        align-items: left;
+      }
+    }
 
+    .col-2 {
+      text-align: center;
+    }
+
+    .col-3 {
+      text-align: center;
+      @include mq($from: tablet) {
+        text-align: right;
+      }
+    }
     @include mq($from: desktop) {
       margin-top: $base-spacing-unit;
     }
@@ -42,7 +58,6 @@
     }
 
     @include mq($until: tablet) {
-      text-align: center;
       margin-bottom: half($base-spacing-unit);
     }
   }
@@ -82,5 +97,19 @@
     fill: $color-gray;
     vertical-align: middle;
     transition: $global-transition;
+  }
+}
+
+.footer-logo {
+  display: inline-block;
+  img {
+    width: 150px;
+    opacity: .25;
+  }
+  &:hover {
+    opacity: 1;
+  }
+  img {
+    width: 150px;
   }
 }

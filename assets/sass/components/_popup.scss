@@ -9,11 +9,11 @@
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
-  z-index: 2;
 }
 .popup-overlay:target {
   visibility: visible;
   opacity: 1;
+  z-index: 2;
 }
 
 .popup {
@@ -24,6 +24,12 @@
   max-width: 50vw;
   position: relative;
   transition: all 5s ease-in-out;
+  @include mq($until: tablet) {
+    width: 90vw;
+  }
+  @include mq($until: desktop) {
+    width: 75vw;
+  }
   .content {
     max-height: 30%;
     overflow: auto;
@@ -46,17 +52,5 @@
     &:hover {
       color: $color-orange;
     }
-  }
-}
-
-@media screen and (max-width: 768px){
-  .popup {
-    width: 75vw;
-  }
-}
-
-@media screen and (max-width: 420px){
-  .popup {
-    width: 90vw;
   }
 }
