@@ -4,4 +4,21 @@
 
 .home-hero {
   padding: 3*($base-spacing-unit) 0;
+  .headline {
+    margin-bottom: 2*($base-spacing-unit);
+  }
+  .btn-play {
+    position: absolute;
+  }
+  &__featured-img {
+    transition: all $global-transition;
+    &:hover {
+      box-shadow: 0px 10px 20px rgba(0,0,0,.5);
+      transform: scale(1.01);
+    }
+  }
+}
+
+.home-featured {
+  
 }
