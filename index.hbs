@@ -2,21 +2,30 @@
 
 <div class='o-wrapper'>
 
-  <div class='o-grid'>
-    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--4-4-m o-grid__col--2-4-l bg-gradient-animation'>
-      <div class='c-archive'>
-        <h2 class='c-archive__title'>
+  <!-- Hero -->
+  <div class='o-grid o-grid--vertical-align home-hero'>
+    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--4-4-m o-grid__col--2-4-l vertical-align'>
+      <div class="home-hero__content">
+        <h1 class='letter-gradient-animation headline'>
           A spiritual dating app to connect awakened souls.
-        </h2>
+        </h1>
+        <a href="#" class="c-btn c-btn--active c-btn--inline">Download the app</a>
       </div>
     </div>
     <div class='o-grid__col o-grid__col--4-4-s o-grid__col--4-4-m o-grid__col--2-4-l'>
       right
     </div>
   </div>
+  <!-- /Hero -->
+
+  <!-- Posts -->
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--4-4-s .o-grid__col--center'>
+      <h1> Featured Posts</h1>
+    </div>
+  </div>
 
   <div class='o-grid js-grid'>
-    <h2>Featured Posts</h2>
     {{> loop }}
   </div>
 
@@ -27,4 +36,6 @@
   <div class='o-grid'>
     {{> index-tags }}
   </div>
+  <!-- /Posts -->
+
 </div>

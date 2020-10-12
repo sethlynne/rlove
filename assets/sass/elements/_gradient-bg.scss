@@ -2,7 +2,6 @@
   Elements > Gradients BG
 \*------------------------------------*/
 
-
 @-webkit-keyframes gradient-bg {
     0%{background-position:52% 0%}
     50%{background-position:49% 100%}
@@ -22,7 +21,22 @@
 .bg-gradient-animation {
   background: linear-gradient(0deg, #874d9e, #fbad50, #fb7676, #40bfee);
   background-size: 800% 800%;
-  -webkit-animation: gradient-bg 30s ease infinite;
-  -moz-animation: gradient-bg 30s ease infinite;
   animation: gradient-bg 30s ease infinite;
+}
+
+.letter-gradient-animation {
+  background: linear-gradient(to right, #874d9e 20%, #fbad50 40%, #fb7676 60%, #40bfee 80%, #874d9e 100%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 20s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
 }

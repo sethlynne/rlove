@@ -13,13 +13,14 @@
   white-space: nowrap;
   outline: none;
   line-height: initial;
+  text-transform: uppercase;
   border: none;
   background-color: $btn-bg;
   font-size: $font-size-medium;
   font-family: $font-sans-serif;
   border: 1px solid $btn-border-color;
   font-size: $font-size-small;
-  letter-spacing: $global-letter-spacing;
+  letter-spacing: $global-letter-spacing*2;
 
   @include attention() {
     color: $btn-color-hover;
@@ -32,6 +33,10 @@
     opacity: .5;
     cursor: not-allowed;
     border-color: $color-gray;
+  }
+
+  &--rounded {
+    border-radius: 50%;
   }
 
   &--full {

@@ -17,10 +17,14 @@ h5,
 h6 {
   font-weight: inherit;
   line-height: initial;
+  font-family: "Recoleta"
 }
 
 h1 {
   font-size: $font-size-h1;
+  &.headline {
+    font-size: $font-size-h1*1.5;
+  }
 }
 
 h2 {
