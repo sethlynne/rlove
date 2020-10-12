@@ -9,7 +9,7 @@ collections:
     template: index
   /blog/:
     permalink: /{slug}/
-    template: blog
+    template: tag
     filter: tag:blog
 
 taxonomies:
