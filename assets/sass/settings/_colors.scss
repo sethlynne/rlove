@@ -4,8 +4,9 @@
 
 // Colors
 $color-brand:   #9e5fa6 !default;
+$color-brand-dark: #8e5596 !default;
 $color-white:   #FFFFFF !default;
-$color-black:   #000000 !default;
+$color-black:   #1c1a1d !default;
 $color-orange:  #f8a96b !default;
 $color-text:    #222222 !default;
 $color-gray:    #5D738D !default;
@@ -31,8 +32,8 @@ $btn-bg-hover: $color-brand !default;
 $btn-color:       $color-gray !default;
 $btn-color-hover: $color-white !default;
 
-$btn-border-color:       $color-border !default;
-$btn-border-color-hover: $color-brand !default;
+$btn-border-color:       $color-brand !default;
+$btn-border-color-hover: $color-brand-dark !default;
 
 // Code Block
 $bg-code-block: $bg-gray !default;

@@ -18,15 +18,28 @@
   background-color: $btn-bg;
   font-size: $font-size-medium;
   font-family: $font-sans-serif;
-  border: 1px solid $btn-border-color;
-  font-size: $font-size-small;
+  border: 2px solid $btn-border-color;
+  font-size: $font-size-tiny;
   letter-spacing: $global-letter-spacing*2;
+  color: $color-brand;
+  font-weight: bold;
 
   @include attention() {
     color: $btn-color-hover;
     text-decoration: none;
     background-color: $btn-bg-hover;
     border-color: $btn-border-color-hover;
+  }
+
+  &--header {
+    border-radius: 50px;
+    background: $color-brand;
+    font-size: $font-size-tiny;
+    color: #fff;
+    font-weight: bold;
+    &:hover {
+      background: darken($color-brand, 5%);
+    }
   }
 
   &--disabled {
@@ -36,7 +49,7 @@
   }
 
   &--rounded {
-    border-radius: 50%;
+    border-radius: 50px;
   }
 
   &--full {
@@ -49,11 +62,11 @@
 
   &--active {
     color: $color-white;
-    background-color: $color-black;
-    border: 1px solid $color-black;
-
+    background-color: $color-brand;
+    border: 1px solid $color-brand;
+    font-weight: bold;
     @include attention() {
-      opacity: .8;
+      background-color: darken($color-brand, 5%);
       color: $color-white;
     }
   }

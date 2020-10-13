@@ -17,7 +17,8 @@ h5,
 h6 {
   font-weight: inherit;
   line-height: initial;
-  font-family: "Recoleta"
+  font-family: "Recoleta";
+  margin-bottom: $base-spacing-unit;
 }
 
 h1 {
@@ -62,4 +63,8 @@ strong {
 
 .text-right {
   text-align: right;
+}
+
+p {
+  margin-bottom: 2*$base-spacing-unit;
 }
