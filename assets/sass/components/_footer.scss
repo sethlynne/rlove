@@ -26,6 +26,7 @@
     border-top: 1px solid $color-border;
     .col-1 {
       text-align: center;
+      display: flex;
       @include mq($from: tablet) {
         align-items: left;
       }

@@ -3,12 +3,13 @@
 \*------------------------------------*/
 
 .c-social-icons {
-  text-align: center;
   li {
     display: inline-block;
   }
 
   .icon {
-    fill: $color-gray;
+    fill: $color-brand;
+    height: 32px;
+    width: 32px;
   }
 }

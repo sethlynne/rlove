@@ -2,6 +2,17 @@
   <div class='o-grid'>
 
     <div class='o-grid__col o-grid__col--3-3-s o-grid__col--1-3-m'>
+      <p class='c-footer__headline'>{{t 'Navigation' }}</p>
+
+      <ul class='c-footer-list o-plain-list'>
+        {{ navigation }}
+        <li class='c-nav__item'>
+          <a href="/guidelines" class="c-nav__link {{#if current}} c-nav__link--current {{/if}}">Guidelines</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class='o-grid__col o-grid__col--3-3-s o-grid__col--1-3-m'>
       <p class='c-footer__headline'>{{t 'Tags' }}</p>
 
       {{#get 'tags' limit='all'}}
@@ -11,14 +22,6 @@
           {{/foreach}}
         </ul>
       {{/get}}
-    </div>
-
-    <div class='o-grid__col o-grid__col--3-3-s o-grid__col--1-3-m'>
-      <p class='c-footer__headline'>{{t 'Navigation' }}</p>
-
-      <ul class='c-footer-list o-plain-list'>
-        {{ navigation }}
-      </ul>
     </div>
 
     <div class='o-grid__col o-grid__col--3-3-s o-grid__col--1-3-m'>
