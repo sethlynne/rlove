@@ -17,6 +17,7 @@ $color-success: #097756 !default;
 $bg-color:        $color-white !default;
 $bg-gray:         #F6F9FC !default;
 $bg-white:        $color-white !default;
+$bg-light-orange: #fff6ee !default;
 $bg-dark-opacity: rgba($color-black, .1);
 
 // Border
@@ -40,3 +41,7 @@ $bg-code-block: $bg-gray !default;
 
 $bg-code-inline:  $bg-gray !default;
 $color-code-inline: $color-text !default;
+
+.bg-light-orange {
+  background-color: $bg-light-orange;
+}
