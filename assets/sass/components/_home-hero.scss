@@ -2,13 +2,18 @@
   Components > Home Hero
 \*------------------------------------*/
 
-.home-hero {
-  padding: 3*($base-spacing-unit) 0;
-  .headline {
-    margin-bottom: 2*($base-spacing-unit);
+.hero {
+  &__home {
+    height: 80vh;
+    .btn-play {
+      position: absolute;
+    }
   }
-  .btn-play {
-    position: absolute;
+  &--padded {
+    padding: 3*$base-spacing-unit 0;
+  }
+  &__featured {
+
   }
   &__featured-img {
     transition: all $global-transition;
@@ -17,4 +22,8 @@
       transform: scale(1.01);
     }
   }
+}
+
+.headline {
+  margin-bottom: 2*($base-spacing-unit);
 }
