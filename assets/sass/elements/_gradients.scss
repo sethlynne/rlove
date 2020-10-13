@@ -1,5 +1,5 @@
 /*------------------------------------*\
-  Elements > Gradients BG
+  Elements > Gradient
 \*------------------------------------*/
 
 @-webkit-keyframes gradient-bg {
@@ -32,7 +32,6 @@
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   animation: shine 20s linear infinite;
   @keyframes shine {
     to {
