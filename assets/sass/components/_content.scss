@@ -68,15 +68,16 @@ $block-max-width: 1300px;
   }
 
   hr {
-    height: 0;
+    height: 5px;
     display: flex;
     min-width: 100%;
     align-items: center;
     justify-content: center;
-    background-color: transparent;
-    margin-top: triple($base-spacing-unit);
-    margin-bottom: triple($base-spacing-unit);
-    border-bottom: 1px solid #f4f4f4;
+    background: linear-gradient(90deg, #874d9e, #fbad50, #40bfee);
+    // background-color: transparent;
+    // margin-top: triple($base-spacing-unit);
+    // margin-bottom: triple($base-spacing-unit);
+    // border-bottom: 1px solid #f4f4f4;
   }
 
   .twitter-tweet {
