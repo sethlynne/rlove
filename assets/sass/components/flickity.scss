@@ -73,21 +73,3 @@
     }
   }
 }
-
-.carousel-nav {
-  display: none;
-  @include mq($from: desktop) {
-    display: block;
-  }
-  .carousel-cell {
-    height: 80px;
-    width: 20vw;
-    &:before {
-      font-size: 50px;
-      line-height: 80px;
-    }
-    &.is-nav-selected {
-      background: #ED2;
-    }
-  }
-}
