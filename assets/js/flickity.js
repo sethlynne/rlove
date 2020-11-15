@@ -1,5 +1,6 @@
 var $carousel = $('.carousel').flickity({
-  prevNextButtons: false
+  prevNextButtons: false,
+  autoPlay: true
 });
 
 $('.carousel-nav-buttons').on( 'click', '.nav-item', function() {
