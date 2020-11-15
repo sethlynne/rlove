@@ -25,6 +25,9 @@ h1 {
   font-size: $font-size-h1;
   &.headline {
     font-size: $font-size-h1*1.5;
+    @include mq($until: desktop) {
+      font-size: 36px;
+    }
   }
 }
 
@@ -67,4 +70,11 @@ strong {
 
 p {
   margin-bottom: 2*$base-spacing-unit;
+}
+
+.headline {
+  margin-bottom: 2*($base-spacing-unit);
+  @include mq($until: desktop) {
+    font-size: 18px;
+  }
 }

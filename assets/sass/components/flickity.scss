@@ -1,0 +1,90 @@
+/*------------------------------------*\
+  Components > Flickity
+\*------------------------------------*/
+
+.carousel-nav-buttons {
+  color: $color-white;
+  @include mq($until: tablet) {
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .nav-item {
+    width: 70%;
+    padding: $base-spacing-unit*2;
+    transition: all $global-transition;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: $base-spacing-unit;
+    border-right: 5px solid transparent;
+    p {
+      margin-bottom: 0;
+    }
+    &.active {
+      border-right: 5px solid $color-brand;
+    }
+    @include mq($until: tablet) {
+      display: inline-block;
+      padding: 10px 10px 10px 0px;
+      text-align: left;
+      z-index: 1;
+      position: relative;
+      border-radius: 0px;
+      width: 80%;
+      border-right: 0px solid transparent;
+      h3 {
+        font-family: "Jost*";
+        letter-spacing: 2px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      h3, p {
+        margin-bottom: 5px;
+        position: relative;
+        word-break: normal;
+        white-space: normal;
+      }
+      &.active {
+        background: none;
+        border-right: 0px solid transparent;
+        border-bottom: 5px solid $color-brand;
+      }
+    }
+  }
+}
+
+
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  counter-increment: carousel-cell;
+  text-align: center;
+  video {
+    border-radius: $base-spacing-unit;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.5);
+    @include mq($until: tablet) {
+      width: 60vw;
+    }
+  }
+}
+
+.carousel-nav {
+  display: none;
+  @include mq($from: desktop) {
+    display: block;
+  }
+  .carousel-cell {
+    height: 80px;
+    width: 20vw;
+    &:before {
+      font-size: 50px;
+      line-height: 80px;
+    }
+    &.is-nav-selected {
+      background: #ED2;
+    }
+  }
+}
