@@ -28,7 +28,8 @@
     width: 90vw;
   }
   @include mq($until: desktop) {
-    width: 75vw;
+    max-width: 95vw;
+    padding: 10px;
   }
   .content {
     max-height: 30%;
