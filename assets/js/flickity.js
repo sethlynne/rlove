@@ -1,6 +1,10 @@
 var $carousel = $('.carousel').flickity({
   prevNextButtons: false,
-  autoPlay: true
+});
+
+// trigger play on all videos
+$carousel.find('video').each( function( i, video ) {
+  video.play();
 });
 
 $('.carousel-nav-buttons').on( 'click', '.nav-item', function() {
