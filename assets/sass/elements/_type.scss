@@ -68,10 +68,6 @@ strong {
   text-align: right;
 }
 
-p {
-  margin-bottom: 2*$base-spacing-unit;
-}
-
 .headline {
   margin-bottom: 2*($base-spacing-unit);
   @include mq($until: desktop) {
