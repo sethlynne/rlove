@@ -35,5 +35,6 @@
 .home-hero__content {
   @include mq($until: desktop) {
     padding-bottom: 2*($base-spacing-unit);
+    padding-top: 2*($base-spacing-unit);
   }
 }
