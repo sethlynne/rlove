@@ -74,12 +74,9 @@ $block-max-width: 1300px;
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    margin-top: double($base-spacing-unit) + $base-spacing-unit;
-    margin-bottom: 0;
-    &:before {
-      content: '----------';
-      color: $color-gray;
-    }
+    margin-top: triple($base-spacing-unit);
+    margin-bottom: triple($base-spacing-unit);
+    border-bottom: 1px solid #f4f4f4;
   }
 
   .twitter-tweet {
