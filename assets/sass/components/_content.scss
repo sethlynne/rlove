@@ -76,9 +76,8 @@ $block-max-width: 1300px;
     background-color: transparent;
     margin-top: double($base-spacing-unit) + $base-spacing-unit;
     margin-bottom: 0;
-
     &:before {
-      content: '* * *';
+      content: '----------';
       color: $color-gray;
     }
   }
