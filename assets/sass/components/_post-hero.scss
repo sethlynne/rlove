@@ -43,16 +43,17 @@
 
   &__title {
     margin-bottom: 0;
-    font-size: $font-size-h3;
+    font-size: $font-size-headline-sm;
     font-family: $font-serif;
     font-weight: $font-weight-regular;
 
     @include mq($from: tablet) {
-      font-size: $font-size-h2;
+      font-size: $font-size-h1;
+      line-height: 1.2;
     }
 
     @include mq($from: desktop) {
-      font-size: double($font-size-h2);
+      font-size: double($font-size-h1);
       line-height: 1.2;
     }
   }
