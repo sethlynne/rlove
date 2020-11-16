@@ -21,7 +21,9 @@
     font-size: $font-size-small;
     letter-spacing: $global-letter-spacing;
     text-transform: uppercase;
-
+    &.padded {
+      padding: 20px 0;
+    }
     &:not(:last-child) {
       @include mq($from: desktop) {
         margin-right: $base-spacing-unit;
