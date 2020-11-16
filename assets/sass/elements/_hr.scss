@@ -4,7 +4,7 @@
 
 hr {
   margin: (double($base-spacing-unit) + half($base-spacing-unit)) 0;
-  border: 0px;
+  border: none;
   height: 5px;
   display: flex;
   min-width: 100%;
