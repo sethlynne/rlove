@@ -3,7 +3,7 @@
 \*------------------------------------*/
 
 .c-post-hero {
-  margin-bottom: 3*($base-spacing-unit);
+  margin-bottom: 2*($base-spacing-unit);
 
   &__content {
     @include mq($until: desktop) {
