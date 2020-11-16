@@ -5,6 +5,11 @@
       <p class='c-footer__headline'>{{t 'Navigation' }}</p>
 
       <ul class='c-footer-list o-plain-list'>
+        <li class='c-nav__item'>
+          <b>
+            <a href="https://rlove.app.link/web" target="_blank" class="c-nav__link {{#if current}} c-nav__link--current {{/if}}">Download</a>
+          </b>
+        </li>
         {{ navigation }}
         <li class='c-nav__item'>
           <a href="/guidelines" class="c-nav__link {{#if current}} c-nav__link--current {{/if}}">Guidelines</a>
@@ -16,9 +21,7 @@
     </div>
 
     <div class='o-grid__col o-grid__col--2-4-s o-grid__col--1-4-m'>
-      <p class='c-footer__headline'>
-        <a href="/blog">Blog</a>
-      </p>
+      <p class='c-footer__headline'>Blog</p>
 
       {{#get 'tags' limit='all'}}
         <ul class='c-footer-list o-plain-list'>
@@ -34,7 +37,7 @@
 
       <ul class='c-footer-list o-plain-list'>
         <li class='c-nav__item'>
-          <a href="https://www.rythmia.com" class="c-nav__link {{#if current}} c-nav__link--current {{/if}}">Rythmia</a>
+          <a href="https://www.rythmia.com" target="_blank" class="c-nav__link {{#if current}} c-nav__link--current {{/if}}">Rythmia</a>
         </li>
         <li class='c-nav__item'>
           <a href="/terms" class="c-nav__link {{#if current}} c-nav__link--current {{/if}}">Terms</a>
