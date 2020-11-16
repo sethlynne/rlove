@@ -2,7 +2,8 @@ var $carousel = $('.carousel').flickity({
   prevNextButtons: false,
   imagesLoaded: true,
   adaptiveHeight: true,
-  lazyLoad: true
+  lazyLoad: true,
+  setGallerySize: false
 });
 
 $('.carousel-nav-buttons').on( 'click', '.nav-item', function() {
