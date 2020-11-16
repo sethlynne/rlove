@@ -7,7 +7,7 @@ $(document).ready(function() {
   var $carousel = $('.carousel').flickity({
     prevNextButtons: false,
     imagesLoaded: true,
-    lazyLoad: true;
+    lazyLoad: true,
   });
 
   $('.carousel-nav-buttons').on( 'click', '.nav-item', function() {
