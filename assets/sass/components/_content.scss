@@ -21,6 +21,10 @@ $block-max-width: 1300px;
     margin-top: double($base-spacing-unit) + half($base-spacing-unit);
   }
 
+  blockquote {
+    margin-top: 0px;
+  }
+
   h1 + *,
   h2 + *,
   h3 + *,
