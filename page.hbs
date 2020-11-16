@@ -4,15 +4,15 @@
 
 {{> post-hero }}
 
+{{#has slug="how-it-works"}}
+  {{> how-it-works }}
+{{/has}}
+
 <div class='o-wrapper'>
 
   <div class='o-grid'>
     <div class='o-grid__col o-grid__col--center o-grid__col--3-4-m o-grid__col--2-3-l'>
       <article class='c-{{ post_class }} is-page'>
-
-        {{#has slug="how-it-works"}}
-          {{> how-it-works }}
-        {{/has}}
 
         <div class='c-content'>
           {{ content }}

@@ -83,8 +83,7 @@
       './node_modules/lunr-languages/lunr.da.js',
       './node_modules/lunr-languages/lunr.multi.js',
       './assets/js/ghosthunter.js',
-      './assets/js/app.js',
-      './assets/js/flickity.js'])
+      './assets/js/app.js'])
       .pipe(jshint())
       .pipe(jshint.reporter('jshint-stylish'))
       .pipe(concat('app.js'))
@@ -98,7 +97,7 @@
   // Watch
   gulp.task('watch', function() {
     gulp.watch('assets/sass/**/*.scss', gulp.series('build_css'));
-    gulp.watch(['./assets/js/app.js', './assets/js/ghosthunter.js', './assets/js/flickity.js'], gulp.series('js'));
+    gulp.watch(['./assets/js/app.js', './assets/js/ghosthunter.js'], gulp.series('js'));
   });
 
   gulp.task(
