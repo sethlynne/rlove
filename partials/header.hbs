@@ -22,7 +22,7 @@
         <div class='o-grid'>
           <div class='o-grid__col o-grid__col--4-4-s o-grid__col--3-4-l o-grid__col--full'>
             <nav class='c-nav-wrap'>
-              <ul class='c-nav o-plain-list'>
+              <ul class='c-nav o-plain-list c-nav__mobile'>
                 {{ navigation }}
                 {{#if @labs.members}}
                   {{#if @member}}
@@ -33,7 +33,7 @@
                     <li class='c-nav__item'><a href='/signup/' class='c-nav__link u-font-weight-medium u-link'>{{t 'Sign Up' }}</a></li>
                   {{/if}}
                 {{/if}}
-                <li class='c-nav__item padded'>
+                <li class='c-nav__item'>
                   <a class='toggle-search-button js-search-toggle' href='#' aria-label='{{t "Search" }}'>
                     <div class='icon icon--ei-search icon--s c-nav__icon'>
                       <svg class='icon__cnt'>
