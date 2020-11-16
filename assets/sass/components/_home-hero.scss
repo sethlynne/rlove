@@ -16,6 +16,9 @@
   &--padded {
     padding: 5*$base-spacing-unit 0;
   }
+  &--padded-top {
+    padding-top: 5*$base-spacing-unit;
+  }
   &__featured {
     @include mq($until: tablet) {
       .headline {
