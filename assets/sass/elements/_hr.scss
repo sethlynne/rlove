@@ -3,8 +3,11 @@
 \*------------------------------------*/
 
 hr {
-  height: 1px;
-  border: 0;
-  background-color: $color-border;
   margin: (double($base-spacing-unit) + half($base-spacing-unit)) 0;
+  height: 5px;
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #874d9e, #fbad50, #40bfee);
 }
