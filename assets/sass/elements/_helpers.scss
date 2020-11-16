@@ -19,3 +19,13 @@
   clear: both;
   display: block;
 }
+
+.how-it-works {
+  video {
+    border-radius: $base-spacing-unit;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.5);
+    @include mq($until: tablet) {
+      width: 60vw;
+    }
+  }
+}
