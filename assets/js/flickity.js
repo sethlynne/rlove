@@ -1,13 +1,12 @@
-$(function() {
-  var $carousel = $('.carousel').flickity({
-    prevNextButtons: false,
-    imagesLoaded: true
-  });
+var $carousel = $('.carousel').flickity({
+  prevNextButtons: false,
+  imagesLoaded: true,
+  adaptiveHeight: true
+});
 
-  $('.carousel-nav-buttons').on( 'click', '.nav-item', function() {
-    var index = $(this).index();
-    $carousel.flickity( 'select', index );
-    $(".nav-item").removeClass("active");
-    $(this).addClass("active");
-  });
+$('.carousel-nav-buttons').on( 'click', '.nav-item', function() {
+  var index = $(this).index();
+  $carousel.flickity( 'select', index );
+  $(".nav-item").removeClass("active");
+  $(this).addClass("active");
 });
