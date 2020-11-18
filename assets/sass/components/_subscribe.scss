@@ -4,13 +4,15 @@
 
 .c-subscribe-form {
   background-color: $bg-white;
-
-  .form-group {
-  }
-
+  border: 1px solid $color-black;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   button {
     background: transparent;
     width: 100%;
+    border-radius: 50px;
+    max-width: 300px;
     @include attention() {
       background: $color-brand;
       color: $color-white;
@@ -23,7 +25,7 @@
     min-width: 2px;
     border: 2px solid $color-gray;
     border-radius: 50px;
-
+    max-width: 300px;
     &:focus {
       border-color: $color-brand;
     }
