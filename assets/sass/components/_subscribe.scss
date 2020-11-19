@@ -7,6 +7,9 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  .form-group {
+    width: 100%;
+  }
   button {
     background: transparent;
     width: 100%;
@@ -20,7 +23,7 @@
 
   &__input[type='email'] {
     border: 0;
-    margin: 0;
+    margin: 0 0 10px 0;
     min-width: 2px;
     border: 2px solid $color-gray;
     border-radius: 50px;
