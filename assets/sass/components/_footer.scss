@@ -116,28 +116,28 @@
   }
 }
 
-#mc_embed_signup {
-  form {
-    input[type=email] {
-      width: 100%;
-      border-radius: 50px;
-      min-height: 40px;
-      padding-left: 15px;
-      line-height: 40px;
-      font-family: "Jost*";
-      font-size: 12px;
-    }
-    input[type=submit] {
-      color: $color-white;
-      background-color: $color-black;
-      width: 100%;
-      border-radius: 50px;
-      min-height: 40px;
-      text-transform: uppercase;
-      letter-spacing: 2*($global-letter-spacing);
-      font-weight: bold;
-      font-family: "Jost*";
-      font-size: 12px;
-    }
-  }
-}
+// #mc_embed_signup {
+//   form {
+//     input[type=email] {
+//       width: 100%;
+//       border-radius: 50px;
+//       min-height: 40px;
+//       padding-left: 15px;
+//       line-height: 40px;
+//       font-family: "Jost*";
+//       font-size: 12px;
+//     }
+//     input[type=submit] {
+//       color: $color-white;
+//       background-color: $color-black;
+//       width: 100%;
+//       border-radius: 50px;
+//       min-height: 40px;
+//       text-transform: uppercase;
+//       letter-spacing: 2*($global-letter-spacing);
+//       font-weight: bold;
+//       font-family: "Jost*";
+//       font-size: 12px;
+//     }
+//   }
+// }
