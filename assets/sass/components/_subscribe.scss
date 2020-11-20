@@ -9,12 +9,16 @@
   margin: 0 auto;
   .form-group {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   button {
     background: transparent;
     width: 100%;
     border-radius: 50px;
     max-width: 300px;
+    height: 60px;
     @include attention() {
       background: $color-brand;
       color: $color-white;
@@ -29,6 +33,7 @@
     border-radius: 50px;
     width: 100%;
     max-width: 300px;
+    height: 60px;
     &:focus {
       border-color: $color-brand;
     }
