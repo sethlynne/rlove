@@ -3,15 +3,12 @@
 \*------------------------------------*/
 
 .c-subscribe-form {
-  background-color: $bg-white;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
   .form-group {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
     justify-content: center;
-    flex-direction: column;
   }
   button {
     background: transparent;
