@@ -41,9 +41,9 @@
       var options = {};
       var callback = function(err, result) {
         if (err) {
-          alert("The number you entered already exists");
+          alert("Oops! There was an error. Please try again. An SMS can only be received from a country with the same IP as your mobile device.");
         } else {
-          alert("SMS sent!");
+          alert("SMS successfully sent! Check your mobile device");
         }
       };
       branch.sendSMS(phone, linkData, options, callback);
