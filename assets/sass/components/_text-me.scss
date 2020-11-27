@@ -15,11 +15,9 @@
     letter-spacing: $global-letter-spacing;
   }
   &__content {
-    border-radius: $base-spacing-unit;
   }
   &__content-inner {
     background-color: $color-white;
-    border-radius: $base-spacing-unit;
     padding: 3*($base-spacing-unit);
   }
   header {
@@ -31,14 +29,16 @@
   }
   input[type=tel] {
     text-align: center;
-    font-size: 36px;
+    font-size: 24px;
     border: none;
+    padding: 10px;
     border-bottom: 2px solid $color-brand;
+    margin-bottom: 0px;
     &::placeholder {
       opacity: .25;
     }
-    @include attention() {
-
+    @include mq($from: tablet) {
+      font-size: 36px;
     }
   }
 }
