@@ -18,6 +18,7 @@
   }
   &__content-inner {
     background-color: $color-white;
+    border-radius: 10px;
     padding: 3*($base-spacing-unit);
   }
   header {
