@@ -2,8 +2,8 @@
   Elements > Inputs
 \*------------------------------------*/
 
-$input-collor-border: #DFE3E9;
-$input-collor-border-hover: $color-brand;
+$input-color-border: #DFE3E9;
+$input-color-border-hover: $color-brand;
 
 input[type='text'],
 input[type='password'],
@@ -25,7 +25,7 @@ textarea {
   display: block;
   padding: $base-spacing-unit;
   margin-bottom: $base-spacing-unit;
-  border: 1px solid $input-collor-border;
+  border: 1px solid $input-color-border;
   border-radius: 0;
   outline: none;
   line-height: initial;
@@ -35,6 +35,6 @@ textarea {
   transition: $global-transition;
 
   &:focus {
-    border-color: $input-collor-border-hover;
+    border-color: $input-color-border-hover;
   }
 }

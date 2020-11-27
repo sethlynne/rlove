@@ -55,13 +55,30 @@
 
 </head>
 
-<body>
-  Send SMS
-  <form onsubmit="sendSMS(this); return false;">
-    <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
-    <br />
-    <input type="submit" />
-  </form>
+<body class="bg-gradient-animation text-me">
+  <header>
+    <a href='{{ @site.url }}'>
+      <img class="text-me__logo" src='{{asset 'images/rlove-logo-white-trans.png' }}' alt='{{ @site.title }}'>
+    </a>
+  </header>
+
+  <div class='o-grid text-me__content'>
+    <div class='o-grid__col o-grid__col--center o-grid__col--4-4-s o-grid__col--4-4-m o-grid__col--4-4-l'>
+      <div class="text-me__content-inner">
+        <form onsubmit="sendSMS(this); return false;">
+          <h1>Download RLOVE</h1>
+          <p>
+            Enter your mobile number below. Please Include your country code.
+          </p>
+          <input id="phone" class="c-input" name="phone" type="tel" placeholder="+1 (555) 555-5555" />
+          <br />
+          <input type="submit" value="Text me the app" class="c-btn c-btn--rounded c-btn--full c-btn--active" />
+        </form>
+      </div>
+      <a href="https://www.rlove.com" class="return-link">Return to rlove.com</a>
+    </div>
+  </div>
+
 </body>
 
 </html>

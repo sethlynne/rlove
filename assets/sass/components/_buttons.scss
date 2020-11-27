@@ -30,6 +30,11 @@
     border-color: $btn-border-color-hover;
   }
 
+  &--white {
+    border-color: $color-white;
+    background-color: $color-white;
+  }
+
   &--header {
     border-radius: 50px;
     background: $color-brand;

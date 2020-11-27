@@ -50,6 +50,10 @@ $color-code-inline: $color-text !default;
   background-color: $color-black;
 }
 
+.bg-white {
+  background-color: $bg-white; 
+}
+
 .text-white {
   color: $color-white;
 }
