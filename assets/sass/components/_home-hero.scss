@@ -42,7 +42,7 @@
     padding: 14px;
   }
   .submit-col {
-    @include mq($from: tablet) {
+    @include mq($from: desktop) {
       padding-left: 0px;
     }
   }
