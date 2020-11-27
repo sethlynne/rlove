@@ -36,6 +36,12 @@
 }
 
 .home-hero__content {
+  padding-right: 50px;
+  input[type=tel] {
+    border-radius: 50px;
+    margin-bottom: 0px;
+    padding: 14px;
+  }
   @include mq($until: desktop) {
     padding-bottom: 2*($base-spacing-unit);
     padding-top: 2*($base-spacing-unit);

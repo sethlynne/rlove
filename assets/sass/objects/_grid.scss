@@ -28,6 +28,10 @@
   padding-right: $grid-gutter;
   padding-left: $grid-gutter;
 
+  &--no-padding {
+    padding: 0;
+  }
+
   @include mq($from: tablet) {
     flex-grow: 1;
   }
